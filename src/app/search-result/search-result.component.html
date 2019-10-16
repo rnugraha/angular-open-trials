@@ -1,1 +1,21 @@
-<p>search-result works!</p>
+<div class="search-result-container">
+    <mat-form-field appearance="outline">
+        <input matInput placeholder="Search here ..." #searchKeywords>
+        <button mat-icon-button matSuffix (click)="searchTrials(searchKeywords.value)">
+            <mat-icon>search</mat-icon>
+        </button>
+    </mat-form-field>
+    <span class="mat-body-1">There are around 999 matched results.</span>
+    <div class="mat-body-1">
+        <a [routerLink]="trialLink" class="mat-h3">Foo</a>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vitae arcu ut lectus faucibus blandit et quis
+            diam. Donec eu mi sed libero feugiat elementum nec vel erat. Quisque interdum, tortor vel pretium ornare, ex
+            augue fermentum odio, at rutrum nibh nulla sit amet nunc. Nam pharetra, tellus sit amet tristique consequat,
+            mi
+            neque tincidunt dui, et sollicitudin nisi dui in lorem. Morbi pharetra lacus ut ornare vehicula. Vivamus vel
+            nibh eget turpis commodo consequat.</p>
+    </div>
+
+    <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]">
+    </mat-paginator>
+</div>

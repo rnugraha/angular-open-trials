@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search-result.component.scss']
 })
 export class SearchResultComponent implements OnInit {
+  
+  trial = {
+    id: 'foo'
+  }
+
+  trialLink  =  ''
 
   constructor() { }
 
   ngOnInit() {
+    this.trialLink = '/trials/' + this.trial.id
   }
 
 }

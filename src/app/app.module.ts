@@ -47,6 +47,8 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatTreeModule } from '@angular/material/tree';
+import { Routes, RouterModule } from '@angular/router';
+
 
 // Custom components
 import { HomeComponent } from './home/home.component';
