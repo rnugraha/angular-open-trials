@@ -32,6 +32,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('span').textContent).toContain('Angular Open Trials');
+    expect(compiled.querySelector('a').textContent).toContain('Angular Open Trials');
   });
 });

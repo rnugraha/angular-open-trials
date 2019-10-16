@@ -1,8 +1,9 @@
 <div class="example-container">
     <mat-form-field appearance="outline">
-        <mat-label>Outline form field</mat-label>
-        <input matInput placeholder="Search">
-        <mat-icon matSuffix>search</mat-icon>
+        <input matInput placeholder="Search here ..." #searchKeywords>
+        <button mat-icon-button matSuffix (click)="searchTrials(searchKeywords.value)">
+            <mat-icon>search</mat-icon>
+        </button>
         <mat-hint>Find trials by title, identifier or by other keywords (e.g. 'heart attack')</mat-hint>
     </mat-form-field>
 </div>
