@@ -16,7 +16,7 @@ export class SearchResultComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.trialLink = '/trials/' + this.trial.id
+    this.trialLink = '/trial/' + this.trial.id
   }
 
 }
